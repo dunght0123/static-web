@@ -1,75 +1,59 @@
-<html lang="en">
+<html>
+    <head>
+        <title>layout 1</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="menu_top">
+            <ul>
+                <li><a href="#" title="trang chủ" class="active">trang chủ</a></li>
+                <li><a href="#" title="trang chủ">giới thiệu</a></li>
+                <li><a href="#" title="trang chủ">tin tức</a></li>
+                <li><a href="#" title="trang chủ">sản phẩm</a></li>
+                <li><a href="#" title="trang chủ">khuyến mãi</a></li>
+                <li><a href="#" title="trang chủ">dịch vụ</a></li>
+                <li><a href="#" title="trang chủ">liên hệ</a></li>
+            </ul>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="StyleSheet" href="./css/style.css">
+        <div id="banner">
+            <img src="banner.png" />
+            
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-</head>
-
-<body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
-    </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
+        <div id="main">
+            <div id="left">
+                <ul>
+                    <li>
+                        <img src="./news.jpg" alt="">
+                        <h2>Nhà vô địch của Call of Duty Mobile Tournament sẽ được xác định qua chuỗi 5 trận Bo3.</h2>
+                    </li>
+                    <li>
+                        <img src="./news.jpg" alt="">
+                        <h2>Nhà vô địch của Call of Duty Mobile Tournament sẽ được xác định qua chuỗi 5 trận Bo3.</h2>
+                    </li>
+                    <li>
+                        <img src="./news.jpg" alt="">
+                        <h2>Nhà vô địch của Call of Duty Mobile Tournament sẽ được xác định qua chuỗi 5 trận Bo3.</h2>
+                    </li>
+                </ul>
+            </div>
+            <div id="right">
+                <div class="menu_right">
+                    <h3> Danh mục tin tức</h3>
+                    <ul>
+                        <li><a href="">menu item 1</a></li>
+                        <li><a href="">menu item 1</a></li>
+                        <li><a href="">menu item 1</a></li>
+                        <li><a href="">menu item 1</a></li>
+                        <li><a href="">menu item 1</a></li>
+                        <li><a href="">menu item 1</a></li>
+                        <li><a href="">menu item 1</a></li>
+                        <li><a href="">menu item 1</a></li>
+                    </ul>
                 </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
-
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
-
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
-
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
-
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
-
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
-
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
-
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
-</body>
-
+            </div>
+        </div>
+        <div id="footer">goodbye</div>
+    </body>
 </html>
